@@ -1,0 +1,9 @@
+<% messages.forEach((message) => {  %>
+    <div class = 'message'>
+        <h2> User : <%= message.user %> </h2>
+        <h3> Message : <%= message.text %> </h3>
+        <h3> Date-added : <%= message.added %></h3>
+        <a href="./<%= message.user %>/<%= message.text %>">message info</a>
+        <br>
+    </div>
+<% }); %>
